@@ -50,7 +50,8 @@ document.addEventListener('DOMContentLoaded', function() {
 			if (event.target.classList.contains('add-card')) {
 				self.addCard(new Card(prompt("Enter the name of the card")));
 			}
-	});
+		});
+	};
 
 	Column.prototype = {
 	    addCard: function(card) {
