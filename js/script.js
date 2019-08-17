@@ -1,21 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-	/*var table = {
-	  name: 'project',
-	  element: <Node element>
-	};
-
-	var column = {
-	  id: '12j82da20k',
-	  name: 'todo',
-	  element: <Node element> // for example document.createElement('div')
-	};
-
-	var card = {
-	  id: '2kd8s958ka',
-	  description: 'Create Kanban app',
-	  color: 'green',
-	  element: <Node element>
-	};*/
 
 	function randomString() {
 	    var chars = '0123456789abcdefghiklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXTZ';
@@ -39,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	function Column(name) {
 		var self = this;
 
-		this.id = randomString();
+		this.id = randomString();https://kodilla-wdp-1907-03.netlify.com/banner3a.61c73475.png
 		this.name = name;
 		this.element = generateTemplate('column-template', { name: this.name });
 
@@ -94,11 +77,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	    },
 	    element: document.querySelector('#board .column-container')
 	};
-
-	addColumn: function(column) {
-		document.querySelector('#board .column-container').element.appendChild(column.element);
-		initSortable(column.id); //About this feature we will tell later
-	}
 
 	function initSortable(id) {
 		var el = document.getElementById(id);
