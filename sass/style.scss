@@ -1,0 +1,106 @@
+body {
+	background-color: #4b2928;
+	width: 100%;
+	font-family: "Roboto", sans-serif;
+
+	h1 {
+		color: #fff;
+		text-align: center;
+		font-size: 40px;
+	}
+
+	.column-title {
+		margin: 5px 0;
+		line-height: 40px;
+		border-bottom: 1px solid #CB9896;
+	}
+
+	.button-style {
+		border-style: solid;
+		border-width: 1px;
+		font-weight: 300;
+		cursor: pointer;
+		border-radius: 5px;
+		padding: 10px;
+	}
+	
+	.button-center {
+		width: 100%;
+		text-align: center;
+	}
+
+	.create-column {
+		margin: 20px;
+		text-align: center;
+		font-size: 20px;
+		background-color: #4b2928;
+		color: #fff;
+		border-color: #fff;
+		&:hover {
+			color: #4b2928;
+			background-color: #fff;
+		}
+	}
+
+	.add-card {
+		text-align: center;
+		font-size: 16px;
+		background-color: #CB9896;
+		color: #fff;
+		&:hover {
+			color: #fff;
+			background-color: #4b2928;
+		}
+	}
+
+	.btn-delete {
+		border-radius: 3px;
+		cursor: pointer;
+		padding: 5px;
+		position: absolute;
+		font-weight: bold;
+		font-size: 12px;
+		width: 24px;
+		background-color: #CB9896;
+		color: #fff;
+		border: none;
+		&:hover {
+			color: #fff;
+			background-color: #4b2928;
+		}
+	}
+
+	.column {
+		width: 25%;
+		padding: 10px;
+		margin: 2px;
+		border: 1px solid #4B2928;
+		border-radius: 5px;
+		background-color: #E6D9E2;
+		color: #4B2928;
+		display: inline-block;
+		list-style: none;
+		position: relative;
+		.btn-delete {
+			top: 15px;
+			right: 15px;
+		}
+	}
+
+	.card {
+		color: #4B2928;
+		position: relative;
+		.btn-delete {
+			top: 0;
+			right: 0;
+		}
+	}
+
+	ul {
+		list-style-type:none;
+		padding: 8px;
+		border-bottom: 1px solid #CB9896;
+		margin-top: 0;
+		font-weight: bold;
+	}
+}

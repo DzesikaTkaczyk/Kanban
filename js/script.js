@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	function Column(name) {
 		var self = this;
 
-		this.id = randomString();https://kodilla-wdp-1907-03.netlify.com/banner3a.61c73475.png
+		this.id = randomString();
 		this.name = name;
 		this.element = generateTemplate('column-template', { name: this.name });
 
