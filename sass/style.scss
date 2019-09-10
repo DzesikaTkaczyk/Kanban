@@ -1,12 +1,27 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	background-color: #4b2928;
 	width: 100%;
 	font-family: "Roboto", sans-serif;
+	margin: 0;
+	padding: 10px;
+	padding-left: 10px;
 
 	h1 {
 		color: #fff;
 		text-align: center;
 		font-size: 40px;
+	}
+
+	.column-container {
+		display: flex;
+
+		div {
+			flex: 1 0 auto;
+		}
 	}
 
 	.column-title {
@@ -71,20 +86,24 @@ body {
 	}
 
 	.column {
-		width: 25%;
+		width: 96%;
 		padding: 10px;
-		margin: 2px;
+		margin: 6px;
 		border: 1px solid #4B2928;
 		border-radius: 5px;
 		background-color: #E6D9E2;
 		color: #4B2928;
-		display: inline-block;
 		list-style: none;
 		position: relative;
+		flex: 0 auto;
 		.btn-delete {
 			top: 15px;
 			right: 15px;
 		}
+	}
+
+	.column-card-list {
+		min-height: 100px;
 	}
 
 	.card {
